@@ -1,0 +1,18 @@
+#Function in data_preprocessing_1 : described with comments
+
+def stemming(content):
+    stemmed_content = re.sub('[^a-zA-Z]',' ',content)
+    #want all content in the form of words, not , / ; etc
+    stemmed_content = stemmed_content.lower()
+    #conv all to lowercase letters
+    stemmed_content = stemmed_content.split() 
+    #split all words
+    stemmed_content = [port_stem.stem(word) for word in stemmed_content 
+                       if not word in stopwords.words('english')]
+    #stemming fn applies to all words in content column and then
+    #split all words                  
+    #and removing all stopwords
+    stemmed_content = ' '.join(stemmed_content)
+    return stemmed_content
+    
+    
