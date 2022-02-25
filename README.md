@@ -6,7 +6,7 @@ The process of learning begins with observations or data, such as examples, dire
 
 Machine learning focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.
 
-The three main Machine Learning Methods are :
+The three main Machine Learning types are :
 1. Supervised Learning
 2. Unsupervised Learning
 3. Reinforcement Learning
